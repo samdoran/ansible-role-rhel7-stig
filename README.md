@@ -11,6 +11,7 @@ Requirements
 ------------
 
 RHEL 7. Other versions are not supported.
+Ansible Version 2.1+. Previous versions are not supported.
 
 Role Variables
 --------------
