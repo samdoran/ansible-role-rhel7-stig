@@ -1,3 +1,19 @@
+- name: "HIGH | RHEL-07-010010 | PATCH | The file permissions, ownership, and group membership of system files and commands must match the vendor values."
+  command: "true"
+  tags:
+      - cat1
+      - high
+      - patch
+      - RHEL-07-010010
+
+- name: "HIGH | RHEL-07-010020 | PATCH | The cryptographic hash of system files and commands must match vendor values."
+  command: "true"
+  tags:
+      - cat1
+      - high
+      - patch
+      - RHEL-07-010020
+
 - name: "HIGH | RHEL-07-010260 | PATCH | The system must not have accounts configured with blank or null passwords."
   replace:
       dest: /etc/pam.d/system-auth
@@ -36,6 +52,50 @@
       - patch
       - RHEL-07-010430
 
+- name: "HIGH | RHEL-07-010431 | PATCH | The operating system must not allow an unattended or automatic logon to the system."
+  lineinfile:
+      dest: /etc/gdm/custom.conf
+      regexp: (?i)timedloginenable
+      line: TimedLoginEnable=false
+      insertafter: '\[daemon\]'
+  ignore_errors: yes
+  tags:
+      - cat1
+      - high
+      - patch
+      - RHEL-07-010431
+
+- name: "HIGH | RHEL-07-010440 | PATCH | The operating system must not allow empty passwords for SSH logon to the system."
+  lineinfile:
+      state: present
+      dest: /etc/ssh/sshd_config
+      regexp: ^#?PermitEmptyPasswords
+      line: PermitEmptyPasswords no
+      validate: sshd -tf %s
+  notify: restart sshd
+  tags:
+      - cat1
+      - high
+      - patch
+      - RHEL-07-010440
+      - sshd
+
+- name: "HIGH | RHEL-07-010460 | PATCH | Systems with a Basic Input/Output System (BIOS) must require authentication upon booting into single-user and maintenance modes."
+  command: "true"
+  tags:
+      - cat1
+      - high
+      - patch
+      - RHEL-07-010460
+
+- name: "HIGH | RHEL-07-010470 | PATCH | Systems using Unified Extensible Firmware Interface (UEFI) must require authentication upon booting into single-user and maintenance modes."
+  command: "true"
+  tags:
+      - cat1
+      - high
+      - patch
+      - RHEL-07-010470
+
 - name: "HIGH | RHEL-07-020000 | PATCH | The rsh-server package including rexecd and rlogind must not be installed."
   yum:
       name: rsh-server
@@ -57,6 +117,45 @@
       - patch
       - RHEL-07-020010
       - ypserv
+
+- name: "HIGH | RHEL-07-020150 | PATCH | Enable GPG check in YUM.CONF"
+  lineinfile:
+      dest: /etc/yum.conf
+      regexp: ^#?gpgcheck=
+      line: gpgcheck=1
+      insertafter: '\[main\]'
+  ignore_errors: yes
+  tags:
+      - cat1
+      - high
+      - patch
+      - RHEL-07-020150
+
+- name: "HIGH | RHEL-07-020151 | PATCH | Enable LOCALPKG_GPG check in YUM.CONF"
+  lineinfile:
+      dest: /etc/yum.conf
+      regexp: ^#?localpkg_gpgcheck=
+      line: localpkg_gpgcheck=1
+      insertafter: '\[main\]'
+  ignore_errors: yes
+  tags:
+      - cat1
+      - high
+      - patch
+      - RHEL-07-020151
+
+- name: "HIGH | RHEL-07-020152 | PATCH | Enable REPO_GPG check in YUM.CONF"
+  lineinfile:
+      dest: /etc/yum.conf
+      regexp: ^#?repo_gpgcheck=
+      line: repo_gpgcheck=1
+      insertafter: '\[main\]'
+  ignore_errors: yes
+  tags:
+      - cat1
+      - high
+      - patch
+      - RHEL-07-020152
 
 - name: "HIGH | RHEL-07-020220 | PATCH | The x86 Ctrl-Alt-Delete key sequence must be disabled."
   file:
