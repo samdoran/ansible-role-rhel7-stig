@@ -1,13 +1,17 @@
 RHEL 7 DISA STIG
 ================
 
+Based on [Red Hat Enterprise Linux 7 STIG Version 1 Release 0.2 - 2015-01-23](http://iasecontent.disa.mil/stigs/zip/U_Red_Hat_Enterprise_Linux_7_V1R0-2_IDraftSTIG.zip)
 
+The best method for viewing the STIGS are via [Stig Viewer](http://iase.disa.mil/stigs/Pages/stig-viewing-guidance.aspx)
 
+This repo originated from work done by [Sam Doran & Josh Springer](https://github.com/samdoran/ansible-role-rhel7stig)
 
 Requirements
 ------------
 
 RHEL 7. Other versions are not supported.
+Ansible Version 2.1+. Previous versions are not supported.
 
 Role Variables
 --------------
