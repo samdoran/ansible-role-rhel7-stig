@@ -14,11 +14,11 @@
   tags:
       - always
 
-- name: Ren preliminary Tasks
-  include: prelim.yml
+- name: Run CAT I audits
+  include: audit-cat1.yml
   tags:
-      - prelim_tasks
-      - always
+      - cat1
+      - audit
 
 - name: Include CAT I patches
   include: fix-cat1.yml
