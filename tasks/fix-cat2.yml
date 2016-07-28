@@ -1439,7 +1439,11 @@
       - RHEL-07-040620
 
 - name: "MEDIUM | RHEL-07-040640 | PATCH | The SSH public host key files must have mode 0644 or less permissive."
-  command: "true"
+  file:
+    dest: "{{ item }}"
+    mode: 0644
+    state: file
+  with_items: "{{ rhel_07_040640_audit.stdout_lines }}"
   tags:
       - cat2
       - medium
@@ -1447,7 +1451,11 @@
       - RHEL-07-040640
 
 - name: "MEDIUM | RHEL-07-040650 | PATCH | The SSH private host key files must have mode 0600 or less permissive."
-  command: "true"
+  file:
+    dest: "{{ item }}"
+    mode: 0600
+    state: file
+  with_items: "{{ rhel_07_040650_audit.stdout_lines }}"
   tags:
       - cat2
       - medium
@@ -1455,47 +1463,80 @@
       - RHEL-07-040650
 
 - name: "MEDIUM | RHEL-07-040660 | PATCH | The SSH daemon must not permit Generic Security Service Application Program Interface (GSSAPI) authentication unless needed."
-  command: "true"
+        lineinfile:
+            dest: /etc/ssh/sshd_config
+            regexp: (?i)^#?gssapiauthentication
+            line: GSSAPIAuthentication no
+            validate: sshd -t -f %s
+        notify: restart ssh
   tags:
       - cat2
       - medium
       - patch
       - RHEL-07-040660
+      - ssh
 
 - name: "MEDIUM | RHEL-07-040670 | PATCH | The SSH daemon must not permit Kerberos authentication unless needed."
-  command: "true"
+      lineinfile:
+          dest: /etc/ssh/sshd_config
+          regexp: (?i)^#?kerberosauthentication
+          line: KerberosAuthentication no
+          validate: sshd -t -f %s
+      notify: restart ssh
   tags:
       - cat2
       - medium
       - patch
       - RHEL-07-040670
+      - ssh
 
 - name: "MEDIUM | RHEL-07-040680 | PATCH | The SSH daemon must perform strict mode checking of home directory configuration files."
-  command: "true"
+    lineinfile:
+        dest: /etc/ssh/sshd_config
+        regexp: (?i)^#?strictmodes
+        line: StrictModes yes
+        validate: sshd -t -f %s
+    notify: restart ssh
   tags:
       - cat2
       - medium
       - patch
       - RHEL-07-040680
+      - ssh
 
 - name: "MEDIUM | RHEL-07-040690 | PATCH | The SSH daemon must use privilege separation."
-  command: "true"
+  lineinfile:
+      dest: /etc/ssh/sshd_config
+      regexp: (?i)^#?useprivilegeseparation
+      line: UsePrivilegeSeparation yes
+      validate: sshd -t -f %s
+  notify: restart ssh
   tags:
       - cat2
       - medium
       - patch
       - RHEL-07-040690
+      - ssh
 
 - name: "MEDIUM | RHEL-07-040700 | PATCH | The SSH daemon must not allow compression or must only allow compression after successful authentication."
-  command: "true"
+  lineinfile:
+      dest: /etc/ssh/sshd_config
+      regexp: (?i)^#?compression
+      line: Compression no
+      validate: sshd -t -f %s
+  notify: restart ssh
   tags:
       - cat2
       - medium
       - patch
       - RHEL-07-040700
+      - ssh
 
 - name: "MEDIUM | RHEL-07-040730 | PATCH | The system must not be performing packet forwarding unless the system is a router."
-  command: "true"
+    sysctl:
+        name: net.ipv4.ip_forward
+        present: yes
+        value: 0
   tags:
       - cat2
       - medium
@@ -1511,12 +1552,15 @@
       - RHEL-07-040740
 
 - name: "MEDIUM | RHEL-07-040810 | PATCH | The system must use a local firewall."
-  command: "true"
+  yum:
+      name: firewalld
+      state: latest
   tags:
       - cat2
       - medium
       - patch
       - RHEL-07-040810
+      - firewalld
 
 - name: "MEDIUM | RHEL-07-040820 | PATCH | The system's access control program must be configured to grant or deny system access to specific hosts and services."
   command: "true"
@@ -1527,7 +1571,8 @@
       - RHEL-07-040820
 
 - name: "MEDIUM | RHEL-07-040830 | PATCH | The system must not have unauthorized IP tunnels configured."
-  command: "true"
+  yum:
+    name: libreswan
   tags:
       - cat2
       - medium
@@ -1535,10 +1580,12 @@
       - RHEL-07-040830
 
 - name: "MEDIUM | RHEL-07-040860 | PATCH | The system must not forward IPv6 source-routed packets."
-  command: "true"
+  sysctl:
+      name: net.ipv6.conf.all.accept_source_route
+      present: yes
+      value: 0
   tags:
       - cat2
       - medium
       - patch
-      - RHEL-07-040860
-
+      - RHEL-07-010860
