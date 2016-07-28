@@ -1463,12 +1463,12 @@
       - RHEL-07-040650
 
 - name: "MEDIUM | RHEL-07-040660 | PATCH | The SSH daemon must not permit Generic Security Service Application Program Interface (GSSAPI) authentication unless needed."
-        lineinfile:
-            dest: /etc/ssh/sshd_config
-            regexp: (?i)^#?gssapiauthentication
-            line: GSSAPIAuthentication no
-            validate: sshd -t -f %s
-        notify: restart ssh
+  lineinfile:
+      dest: /etc/ssh/sshd_config
+      regexp: (?i)^#?gssapiauthentication
+      line: GSSAPIAuthentication no
+      validate: sshd -t -f %s
+  notify: restart ssh
   tags:
       - cat2
       - medium
@@ -1477,12 +1477,12 @@
       - ssh
 
 - name: "MEDIUM | RHEL-07-040670 | PATCH | The SSH daemon must not permit Kerberos authentication unless needed."
-      lineinfile:
-          dest: /etc/ssh/sshd_config
-          regexp: (?i)^#?kerberosauthentication
-          line: KerberosAuthentication no
-          validate: sshd -t -f %s
-      notify: restart ssh
+  lineinfile:
+      dest: /etc/ssh/sshd_config
+      regexp: (?i)^#?kerberosauthentication
+      line: KerberosAuthentication no
+      validate: sshd -t -f %s
+  notify: restart ssh
   tags:
       - cat2
       - medium
@@ -1491,12 +1491,12 @@
       - ssh
 
 - name: "MEDIUM | RHEL-07-040680 | PATCH | The SSH daemon must perform strict mode checking of home directory configuration files."
-    lineinfile:
-        dest: /etc/ssh/sshd_config
-        regexp: (?i)^#?strictmodes
-        line: StrictModes yes
-        validate: sshd -t -f %s
-    notify: restart ssh
+  lineinfile:
+      dest: /etc/ssh/sshd_config
+      regexp: (?i)^#?strictmodes
+      line: StrictModes yes
+      validate: sshd -t -f %s
+  notify: restart ssh
   tags:
       - cat2
       - medium
@@ -1533,10 +1533,10 @@
       - ssh
 
 - name: "MEDIUM | RHEL-07-040730 | PATCH | The system must not be performing packet forwarding unless the system is a router."
-    sysctl:
-        name: net.ipv4.ip_forward
-        present: yes
-        value: 0
+  sysctl:
+      name: net.ipv4.ip_forward
+      present: yes
+      value: 0
   tags:
       - cat2
       - medium
@@ -1571,8 +1571,7 @@
       - RHEL-07-040820
 
 - name: "MEDIUM | RHEL-07-040830 | PATCH | The system must not have unauthorized IP tunnels configured."
-  yum:
-    name: libreswan
+  command: "true"
   tags:
       - cat2
       - medium
