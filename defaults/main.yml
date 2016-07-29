@@ -24,3 +24,8 @@ rhel7stig_tftp_required: no
 # RHEL-07-040580 Set the SNMP community string to this from the default of
 # public or private
 rhel7stig_snmp_community: Endgam3Ladyb0g
+
+# RHEL-07-040730 The system must not be performing packet forwarding unless the
+# system is a router. This variable is used in tasks that should not be run
+# if the OS is run as a router. (must override to yes)
+rhel7stig_system_is_router: no

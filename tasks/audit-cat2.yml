@@ -1,9 +1,9 @@
 - name: "MEDIUM | RHEL-07-040640 | AUDIT | The SSH public host key files must have mode 0644 or less permissive."
-  command: find / -name '*ssh_host*key'
+  command: find / -name '*.pub'
   failed_when: no
   changed_when: no
   ignore_errors: yes
-  register: rhel_07_040650_audit
+  register: rhel_07_040640_audit
   tags:
       - cat2
       - high
@@ -12,7 +12,12 @@
       - always
 
 - name: "MEDIUM | RHEL-07-040650 | AUDIT | The SSH private host key files must have mode 0600 or less permissive."
-  command: find / -name '*ssh_host*key'
+  find:
+      paths: /
+      recurse: yes
+      file_type: file
+      patterns: '*ssh_host*key'
+      hidden: true
   failed_when: no
   changed_when: no
   ignore_errors: yes

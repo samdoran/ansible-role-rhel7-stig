@@ -1440,9 +1440,9 @@
 
 - name: "MEDIUM | RHEL-07-040640 | PATCH | The SSH public host key files must have mode 0644 or less permissive."
   file:
-    dest: "{{ item }}"
-    mode: 0644
-    state: file
+     dest: "{{ item }}"
+     mode: 0644
+     state: file
   with_items: "{{ rhel_07_040640_audit.stdout_lines }}"
   tags:
       - cat2
@@ -1452,10 +1452,10 @@
 
 - name: "MEDIUM | RHEL-07-040650 | PATCH | The SSH private host key files must have mode 0600 or less permissive."
   file:
-    dest: "{{ item }}"
-    mode: 0600
-    state: file
-  with_items: "{{ rhel_07_040650_audit.stdout_lines }}"
+     dest: "{{ item }}"
+     mode: 0600
+     state: file
+  with_items: "{{ rhel_07_040650_audit.files | map(attribute='path') | list }}"
   tags:
       - cat2
       - medium
@@ -1524,6 +1524,7 @@
       regexp: (?i)^#?compression
       line: Compression no
       validate: sshd -t -f %s
+  ignore_errors: yes
   notify: restart ssh
   tags:
       - cat2
@@ -1537,6 +1538,8 @@
       name: net.ipv4.ip_forward
       present: yes
       value: 0
+  ignore_errors: yes
+  when: not rhel7stig_system_is_router
   tags:
       - cat2
       - medium
@@ -1555,6 +1558,18 @@
   yum:
       name: firewalld
       state: latest
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-040810
+      - firewalld
+
+- name: "MEDIUM | RHEL-07-040810 | PATCH | The system must use a local firewall."
+  service:
+      name: firewalld
+      state: started
+      enabled: yes
   tags:
       - cat2
       - medium
@@ -1583,6 +1598,7 @@
       name: net.ipv6.conf.all.accept_source_route
       present: yes
       value: 0
+  ignore_errors: yes
   tags:
       - cat2
       - medium
