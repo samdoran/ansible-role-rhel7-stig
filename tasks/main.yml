@@ -28,21 +28,18 @@
 
 - name: Include CAT I patches
   include: fix-cat1.yml
-  when: rhel7stig_cat1_patch
   tags:
       - cat1
       - patch
 
 - name: Include CAT II patches
   include: fix-cat2.yml
-  when: rhel7stig_cat1_patch
   tags:
       - cat1
       - patch
 
 - name: Include CAT III patches
   include: fix-cat3.yml
-  when: rhel7stig_cat1_patch
   tags:
       - cat1
       - patch

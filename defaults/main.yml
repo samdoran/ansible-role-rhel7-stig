@@ -29,3 +29,6 @@ rhel7stig_snmp_community: Endgam3Ladyb0g
 # system is a router. This variable is used in tasks that should not be run
 # if the OS is run as a router. (must override to yes)
 rhel7stig_system_is_router: no
+
+#RHEL-07-040560 An X Windows display manager must not be installed unless approved.
+rhel7stig_x11: no
