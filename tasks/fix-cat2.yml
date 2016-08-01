@@ -1276,48 +1276,21 @@
 - name: "MEDIUM | RHEL-07-040230 | PATCH | The operating system, if using PKI-based authentication, must implement a local cache of revocation data to certificate validation in case of the inability to access revocation information via the network."
   lineinfile:
       dest: /var/lib/pki-kra/conf/server.xml
-      regexp: ^#?auths.revocationChecking.bufferSize
-      line: auths.revocationChecking.bufferSize=50
-  when: rhel_07_040230_audit.stat.exists == True
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-040230
-      - pki
+      regexp: "{{ item.regexp }}"
+      line: "{{ item.line }}"
+  when: rhel_07_040230_audit.stat.exists
+  with_items:
+      -   regexp: '^#?auths.revocationChecking.bufferSize'
+          line: 'auths.revocationChecking.bufferSize=50'
 
-- name: "MEDIUM | RHEL-07-040230 | PATCH | The operating system, if using PKI-based authentication, must implement a local cache of revocation data to certificate validation in case of the inability to access revocation information via the network."
-  lineinfile:
-      dest: /var/lib/pki-kra/conf/server.xml
-      regexp: ^#?auths.revocationChecking.enabled
-      line: auths.revocationChecking.enabled=true
-  when: rhel_07_040230_audit.stat.exists == True
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-040230
-      - pki
+      -   regexp: '^#?auths.revocationChecking.enabled'
+          line: 'auths.revocationChecking.enabled=true'
 
-- name: "MEDIUM | RHEL-07-040230 | PATCH | The operating system, if using PKI-based authentication, must implement a local cache of revocation data to certificate validation in case of the inability to access revocation information via the network."
-  lineinfile:
-      dest: /var/lib/pki-kra/conf/server.xml
-      regexp: ^#?enableOCSP
-      line: enableOCSP="true"
-  when: rhel_07_040230_audit.stat.exists == True
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-040230
-      - pki
-
-- name: "MEDIUM | RHEL-07-040230 | PATCH | The operating system, if using PKI-based authentication, must implement a local cache of revocation data to certificate validation in case of the inability to access revocation information via the network."
-  lineinfile:
-      dest: /var/lib/pki-kra/conf/server.xml
-      regexp: ^#?ocspCacheSize
-      line: ocspCacheSize="50"
-  when: rhel_07_040230_audit.stat.exists == True
+      -   regexp: '^#?enableOCSP'
+          line: 'enableOCSP="true"'
+          
+      -   regexp: '^#?ocspCacheSize'
+          line: 'ocspCacheSize="50"'
   tags:
       - cat2
       - medium
@@ -1445,7 +1418,7 @@
       state: present
       value: 1
       reload: yes
-  ignore_errors: yes
+      ignoreerrors: yes
   tags:
       - cat2
       - medium
@@ -1459,7 +1432,7 @@
       state: present
       value: 1
       reload: yes
-  ignore_errors: yes
+      ignoreerrors: yes
   tags:
       - cat2
       - medium
@@ -1474,7 +1447,7 @@
       value: 1
       sysctl_set: yes
       reload: yes
-  ignore_errors: yes
+      ignoreerrors: yes
   tags:
       - cat2
       - medium
@@ -1488,7 +1461,7 @@
       state: present
       value: 0
       reload: yes
-  ignore_errors: yes
+      ignoreerrors: yes
   tags:
       - cat2
       - medium
@@ -1502,7 +1475,7 @@
       state: present
       value: 0
       reload: yes
-  ignore_errors: yes
+      ignoreerrors: yes
   tags:
       - cat2
       - medium
@@ -1516,7 +1489,7 @@
       state: present
       value: 0
       reload: yes
-  ignore_errors: yes
+      ignoreerrors: yes
   tags:
       - cat2
       - medium
@@ -1529,7 +1502,7 @@
       state: present
       value: 0
       reload: yes
-  ignore_errors: yes
+      ignoreerrors: yes
   tags:
       - cat2
       - medium
@@ -1671,7 +1644,6 @@
       regexp: (?i)^#?compression
       line: Compression no
       validate: sshd -t -f %s
-  ignore_errors: yes
   notify: restart ssh
   tags:
       - cat2
@@ -1686,7 +1658,7 @@
       state: present
       value: 0
       reload: yes
-  ignore_errors: yes
+      ignoreerrors: yes
   when: not rhel7stig_system_is_router
   tags:
       - cat2
@@ -1748,7 +1720,7 @@
       state: present
       value: 0
       reload: yes
-  ignore_errors: yes
+      ignoreerrors: yes
   tags:
       - cat2
       - medium
