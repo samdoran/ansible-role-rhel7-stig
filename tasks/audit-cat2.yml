@@ -59,12 +59,22 @@
       - RHEL-07-040210
       - ntp
 
-- name: "MEDIUM | RHEL-07-040180 | PATCH | The operating system must implement cryptography to protect the integrity of Lightweight Directory Access Protocol (LDAP) authentication communications."
+- name: "MEDIUM | RHEL-07-040180 | AUDIT | The operating system must implement cryptography to protect the integrity of Lightweight Directory Access Protocol (LDAP) authentication communications."
   command: grep -i useldapauth /etc/sysconfig/authconfig
   register: rhel_07_040180_audit
   tags:
       - cat2
       - medium
-      - patch
+      - audit
+      - RHEL-07-040180
+      - ldap
+
+- name: "MEDIUM | RHEL-07-040180 | AUDIT | The operating system must implement cryptography to protect the integrity of Lightweight Directory Access Protocol (LDAP) authentication communications."
+  command: systemctl status nails
+  register: rhel_07_040180_audit
+  tags:
+      - cat2
+      - medium
+      - audit
       - RHEL-07-040180
       - ldap

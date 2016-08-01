@@ -1210,12 +1210,16 @@
       - RHEL-07-040110
 
 - name: "MEDIUM | RHEL-07-040160 | PATCH | All network connections associated with a communication session must be terminated at the end of the session or after 10 minutes of inactivity from the user at a command prompt, except to fulfill documented and validated mission requirements."
-  command: "true"
+  lineinfile:
+      dest: /etc/profile
+      regexp: ^#?TMOUT
+      line: TMOUT=600
   tags:
       - cat2
       - medium
       - patch
       - RHEL-07-040160
+      - profile
 
 - name: "MEDIUM | RHEL-07-040170 | PATCH | The Standard Mandatory DoD Notice and Consent Banner must be displayed immediately prior to, or as part of, remote access logon prompts."
   command: "true"
@@ -1291,6 +1295,7 @@
       - patch
       - RHEL-07-040210
       - ntp
+      - ntpd
 
 - name: "MEDIUM | RHEL-07-040230 | PATCH | The operating system, if using PKI-based authentication, must implement a local cache of revocation data to certificate validation in case of the inability to access revocation information via the network."
   lineinfile:
