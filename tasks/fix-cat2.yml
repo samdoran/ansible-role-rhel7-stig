@@ -1231,7 +1231,7 @@
 
 - name: "MEDIUM | RHEL-07-040180 | PATCH | The operating system must implement cryptography to protect the integrity of Lightweight Directory Access Protocol (LDAP) authentication communications."
   command: "true"
-  when: '"yes" in "{{ rhel_07_040180_audit.stdout_lines }}"'
+  when: "'yes' in rhel_07_040180_audit.stdout"
   tags:
       - cat2
       - medium
