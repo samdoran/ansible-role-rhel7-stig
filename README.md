@@ -14,12 +14,12 @@ Role Variables
 
 | Name              | Default Value       | Description          |
 |-------------------|---------------------|----------------------|
-| `rhel7stig_cat1_audit` | 'yes' | Audit for CAT I findings      |
-| `rhel7stig_cat2_audit` | 'no'  | Audit for CAT II findings     |
-| `rhel7stig_cat3_audit` | 'no'  | Audit for CAT III findings    |
-| `rhel7stig_cat1_patch` | 'yes' | Correct CAT I findings        |
-| `rhel7stig_cat2_patch` | 'no'  | Correct CAT II findings       |
-| `rhel7stig_cat3_patch` | 'no'  | Correct CAT III findings      |
+| `rhel7stig_cat1_audit` | `yes` | Audit for CAT I findings      |
+| `rhel7stig_cat2_audit` | `no`  | Audit for CAT II findings     |
+| `rhel7stig_cat3_audit` | `no`  | Audit for CAT III findings    |
+| `rhel7stig_cat1_patch` | `yes` | Correct CAT I findings        |
+| `rhel7stig_cat2_patch` | `no`  | Correct CAT II findings       |
+| `rhel7stig_cat3_patch` | `no`  | Correct CAT III findings      |
 
 
 Dependencies
