@@ -9,15 +9,30 @@
 
 - name: Check ansible version
   fail:
-     msg: You must use ansible 2.1 or greater
+      msg: You must use ansible 2.1 or greater
   when: not ansible_version.full | version_compare('2.1', '>=')
   tags:
       - always
 
 - name: Run CAT I audits
   include: audit-cat1.yml
+  when: rhel7stig_cat1_audit
   tags:
       - cat1
+      - audit
+
+- name: Run CAT II audits
+  include: audit-cat2.yml
+  when: rhel7stig_cat2_audit
+  tags:
+      - cat2
+      - audit
+
+- name: Run CAT III audits
+  include: audit-cat3.yml
+  when: rhel7stig_cat3_audit
+  tags:
+      - cat2
       - audit
 
 - name: Include CAT I patches
@@ -29,14 +44,14 @@
 
 - name: Include CAT II patches
   include: fix-cat2.yml
-  when: rhel7stig_cat1_patch
+  when: rhel7stig_cat2_patch
   tags:
-      - cat1
+      - cat2
       - patch
 
 - name: Include CAT III patches
   include: fix-cat3.yml
-  when: rhel7stig_cat1_patch
+  when: rhel7stig_cat3_patch
   tags:
-      - cat1
+      - cat3
       - patch
