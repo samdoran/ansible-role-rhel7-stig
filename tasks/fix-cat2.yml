@@ -6,21 +6,21 @@
       - patch
       - RHEL-07-010030
 
-- name: "MEDIUM | RHEL-07-010031 | PATCH | The operating system must display the approved Standard Mandatory DoD Notice and Consent Banner before granting local or remote access to the system via a graphical user logon."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-010031
-
-- name: "MEDIUM | RHEL-07-010040 | PATCH | The operating system must display the Standard Mandatory DoD Notice and Consent Banner before granting local or remote access to the system via a command line user logon."
+- name: "MEDIUM | RHEL-07-010040 | PATCH | The operating system must display the approved Standard Mandatory DoD Notice and Consent Banner before granting local or remote access to the system via a graphical user logon."
   command: "true"
   tags:
       - cat2
       - medium
       - patch
       - RHEL-07-010040
+
+- name: "MEDIUM | RHEL-07-010050 | PATCH | The operating system must display the Standard Mandatory DoD Notice and Consent Banner before granting local or remote access to the system via a command line user logon."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-010050
 
 - name: "MEDIUM | RHEL-07-010060 | PATCH | The operating system must enable a user session lock until that user re-establishes access using established identification and authentication procedures."
   command: "true"
@@ -38,39 +38,15 @@
       - patch
       - RHEL-07-010070
 
-- name: "MEDIUM | RHEL-07-010074 | PATCH | The operating system must initiate a session lock for graphical user interfaces when the screensaver is activated."
+- name: "MEDIUM | RHEL-07-010080 | PATCH | The operating system must set the idle delay setting for all connection types."
   command: "true"
   tags:
       - cat2
       - medium
       - patch
-      - RHEL-07-010074
+      - RHEL-07-010080
 
-- name: "MEDIUM | RHEL-07-010071 | PATCH | The operating system must initiate a session lock after a 15-minute period of inactivity for all connection types."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-010071
-
-- name: "MEDIUM | RHEL-07-010072 | PATCH | The operating system must have the screen package installed."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-010072
-
-- name: "MEDIUM | RHEL-07-010073 | PATCH | The operating system must initiate a session lock for the screensaver after a period of inactivity for graphical user interfaces."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-010073
-
-- name: "MEDIUM | RHEL-07-010090 | PATCH | When passwords are changed or new passwords are established, the new password must contain at least one upper-case character."
+- name: "MEDIUM | RHEL-07-010090 | PATCH | The operating system must have the screen package installed."
   command: "true"
   tags:
       - cat2
@@ -78,7 +54,7 @@
       - patch
       - RHEL-07-010090
 
-- name: "MEDIUM | RHEL-07-010100 | PATCH | When passwords are changed or new passwords are established, the new password must contain at least one lower-case character."
+- name: "MEDIUM | RHEL-07-010100 | PATCH | The operating system must initiate a session lock for the screensaver after a period of inactivity for graphical user interfaces."
   command: "true"
   tags:
       - cat2
@@ -86,7 +62,7 @@
       - patch
       - RHEL-07-010100
 
-- name: "MEDIUM | RHEL-07-010110 | PATCH | When passwords are changed or new passwords are assigned, the new password must contain at least one numeric character."
+- name: "MEDIUM | RHEL-07-010110 | PATCH | The operating system must initiate a session lock for graphical user interfaces when the screensaver is activated."
   command: "true"
   tags:
       - cat2
@@ -94,7 +70,7 @@
       - patch
       - RHEL-07-010110
 
-- name: "MEDIUM | RHEL-07-010120 | PATCH | When passwords are changed or new passwords are assigned, the new password must contain at least one special character."
+- name: "MEDIUM | RHEL-07-010120 | PATCH | When passwords are changed or new passwords are established, the new password must contain at least one upper-case character."
   command: "true"
   tags:
       - cat2
@@ -102,7 +78,7 @@
       - patch
       - RHEL-07-010120
 
-- name: "MEDIUM | RHEL-07-010130 | PATCH | When passwords are changed a minimum of eight of the total number of characters must be changed."
+- name: "MEDIUM | RHEL-07-010130 | PATCH | When passwords are changed or new passwords are established, the new password must contain at least one lower-case character."
   command: "true"
   tags:
       - cat2
@@ -110,7 +86,7 @@
       - patch
       - RHEL-07-010130
 
-- name: "MEDIUM | RHEL-07-010140 | PATCH | When passwords are changed a minimum of four character classes must be changed."
+- name: "MEDIUM | RHEL-07-010140 | PATCH | When passwords are changed or new passwords are assigned, the new password must contain at least one numeric character."
   command: "true"
   tags:
       - cat2
@@ -118,7 +94,7 @@
       - patch
       - RHEL-07-010140
 
-- name: "MEDIUM | RHEL-07-010150 | PATCH | When passwords are changed the number of repeating consecutive characters must not be more than four characters."
+- name: "MEDIUM | RHEL-07-010150 | PATCH | When passwords are changed or new passwords are assigned, the new password must contain at least one special character."
   command: "true"
   tags:
       - cat2
@@ -126,7 +102,7 @@
       - patch
       - RHEL-07-010150
 
-- name: "MEDIUM | RHEL-07-010160 | PATCH | When passwords are changed the number of repeating characters of the same character class must not be more than four characters."
+- name: "MEDIUM | RHEL-07-010160 | PATCH | When passwords are changed a minimum of eight of the total number of characters must be changed."
   command: "true"
   tags:
       - cat2
@@ -134,7 +110,7 @@
       - patch
       - RHEL-07-010160
 
-- name: "MEDIUM | RHEL-07-010170 | PATCH | The PAM system service must be configured to store only encrypted representations of passwords."
+- name: "MEDIUM | RHEL-07-010170 | PATCH | When passwords are changed a minimum of four character classes must be changed."
   command: "true"
   tags:
       - cat2
@@ -142,7 +118,7 @@
       - patch
       - RHEL-07-010170
 
-- name: "MEDIUM | RHEL-07-010180 | PATCH | The shadow file must be configured to store only encrypted representations of passwords."
+- name: "MEDIUM | RHEL-07-010180 | PATCH | When passwords are changed the number of repeating consecutive characters must not be more than four characters."
   command: "true"
   tags:
       - cat2
@@ -150,7 +126,7 @@
       - patch
       - RHEL-07-010180
 
-- name: "MEDIUM | RHEL-07-010190 | PATCH | User and group account administration utilities must be configured to store only encrypted representations of passwords."
+- name: "MEDIUM | RHEL-07-010190 | PATCH | When passwords are changed the number of repeating characters of the same character class must not be more than four characters."
   command: "true"
   tags:
       - cat2
@@ -158,7 +134,7 @@
       - patch
       - RHEL-07-010190
 
-- name: "MEDIUM | RHEL-07-010200 | PATCH | Passwords for new users must be restricted to a 24 hours/1 day minimum lifetime."
+- name: "MEDIUM | RHEL-07-010200 | PATCH | The PAM system service must be configured to store only encrypted representations of passwords."
   command: "true"
   tags:
       - cat2
@@ -166,7 +142,7 @@
       - patch
       - RHEL-07-010200
 
-- name: "MEDIUM | RHEL-07-010210 | PATCH | Passwords must be restricted to a 24 hours/1 day minimum lifetime."
+- name: "MEDIUM | RHEL-07-010210 | PATCH | The shadow file must be configured to store only encrypted representations of passwords."
   command: "true"
   tags:
       - cat2
@@ -174,7 +150,7 @@
       - patch
       - RHEL-07-010210
 
-- name: "MEDIUM | RHEL-07-010220 | PATCH | Passwords for new users must be restricted to a 60-day maximum lifetime."
+- name: "MEDIUM | RHEL-07-010220 | PATCH | User and group account administration utilities must be configured to store only encrypted representations of passwords."
   command: "true"
   tags:
       - cat2
@@ -182,7 +158,7 @@
       - patch
       - RHEL-07-010220
 
-- name: "MEDIUM | RHEL-07-010230 | PATCH | Existing passwords must be restricted to a 60-day maximum lifetime."
+- name: "MEDIUM | RHEL-07-010230 | PATCH | Passwords for new users must be restricted to a 24 hours/1 day minimum lifetime."
   command: "true"
   tags:
       - cat2
@@ -190,7 +166,7 @@
       - patch
       - RHEL-07-010230
 
-- name: "MEDIUM | RHEL-07-010240 | PATCH | Passwords must be prohibited from reuse for a minimum of five generations."
+- name: "MEDIUM | RHEL-07-010240 | PATCH | Passwords must be restricted to a 24 hours/1 day minimum lifetime."
   command: "true"
   tags:
       - cat2
@@ -198,7 +174,7 @@
       - patch
       - RHEL-07-010240
 
-- name: "MEDIUM | RHEL-07-010250 | PATCH | Passwords must be a minimum of 15 characters in length."
+- name: "MEDIUM | RHEL-07-010250 | PATCH | Passwords for new users must be restricted to a 60-day maximum lifetime."
   command: "true"
   tags:
       - cat2
@@ -206,13 +182,37 @@
       - patch
       - RHEL-07-010250
 
-- name: "MEDIUM | RHEL-07-010280 | PATCH | The operating system must disable account identifiers (individuals, groups, roles, and devices) if the password expires."
+- name: "MEDIUM | RHEL-07-010260 | PATCH | Existing passwords must be restricted to a 60-day maximum lifetime."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-010260
+
+- name: "MEDIUM | RHEL-07-010270 | PATCH | Passwords must be prohibited from reuse for a minimum of five generations."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-010270
+
+- name: "MEDIUM | RHEL-07-010280 | PATCH | Passwords must be a minimum of 15 characters in length."
   command: "true"
   tags:
       - cat2
       - medium
       - patch
       - RHEL-07-010280
+
+- name: "MEDIUM | RHEL-07-010310 | PATCH | The operating system must disable account identifiers (individuals, groups, roles, and devices) if the password expires."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-010310
 
 - name: "MEDIUM | RHEL-07-010371 | PATCH | If three unsuccessful logon attempts within 15 minutes occur the associated account must be locked."
   command: "true"
@@ -1756,3 +1756,11 @@
       - patch
       - RHEL-07-040860
       - ipv6
+
+- name: "MEDIUM | RHEL-07-010071 | PATCH | The operating system must initiate a session lock after a 15-minute period of inactivity for all connection types."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-010071

@@ -42,7 +42,6 @@
                 </SI_DATA>
                 <SI_DATA>
                     <SID_NAME>releaseinfo</SID_NAME>
-                    <SID_DATA>Release: 1 Benchmark Date: 27 Feb 2017</SID_DATA>
                 </SI_DATA>
                 <SI_DATA>
                     <SID_NAME>title</SID_NAME>
@@ -50,7 +49,7 @@
                 </SI_DATA>
                 <SI_DATA>
                     <SID_NAME>uuid</SID_NAME>
-                    <SID_DATA>7fa6d192-5d1c-4ebe-9493-e3d772a6c5fd</SID_DATA>
+                    <SID_DATA>f60e0f32-b6dd-4a0d-9be2-d3cd1e266da4</SID_DATA>
                 </SI_DATA>
                 <SI_DATA>
                     <SID_NAME>notice</SID_NAME>
@@ -58,7 +57,6 @@
                 </SI_DATA>
                 <SI_DATA>
                     <SID_NAME>source</SID_NAME>
-                    <SID_DATA>STIG.DOD.MIL</SID_DATA>
                 </SI_DATA>
             </STIG_INFO>
             <VULN>
@@ -450,7 +448,7 @@ banner-message-enable=true</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000048</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -622,7 +620,7 @@ By using this IS (which includes any device attached to this IS), you consent to
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000048</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -788,7 +786,7 @@ By using this IS (which includes any device attached to this IS), you consent to
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000048</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -937,7 +935,7 @@ Users must log out and back in again before the system-wide settings take effect
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000056</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -1082,7 +1080,7 @@ Users must log out and back in again before the system-wide settings take effect
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000057</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -1214,7 +1212,7 @@ Add the setting to lock the screensaver idle delay:
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000057</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -1334,7 +1332,7 @@ ctrl+A x</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000057</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -1456,7 +1454,7 @@ idle-activation-enabled=true</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000057</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -1581,7 +1579,7 @@ After the setting has been set, run dconf update.</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000057</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -1697,7 +1695,7 @@ ucredit = -1</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000192</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -1819,7 +1817,7 @@ and run the "authconfig" command.</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000193</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -1935,7 +1933,7 @@ dcredit = -1</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000194</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -2053,7 +2051,7 @@ ocredit = -1</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-001619</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -2169,7 +2167,7 @@ difok = 8</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000195</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -2285,7 +2283,7 @@ minclass = 4</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000195</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -2401,7 +2399,7 @@ maxrepeat = 2</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000195</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -2517,7 +2515,7 @@ maxclassrepeat = 4</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000195</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -2633,7 +2631,7 @@ and run the "authconfig" command.</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000196</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -2747,7 +2745,7 @@ ENCRYPT_METHOD SHA512</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000196</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -2862,7 +2860,7 @@ crypt_style = sha512</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000196</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -2976,7 +2974,7 @@ PASS_MIN_DAYS     1</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000198</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -3085,7 +3083,7 @@ If any results are returned that are not associated with a system account, this 
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000198</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -3199,7 +3197,7 @@ PASS_MAX_DAYS     60</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000199</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -3308,7 +3306,7 @@ If any results are returned that are not associated with a system account, this 
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000199</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -3424,7 +3422,7 @@ and run the "authconfig" command.</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000200</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -26921,7 +26919,7 @@ If either of these commands returns any output, this is a finding.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
