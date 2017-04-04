@@ -3538,7 +3538,7 @@ minlen = 15</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000205</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -3877,7 +3877,7 @@ INACTIVE=0</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000795</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -3998,7 +3998,7 @@ and run the "authconfig" command.</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002238</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -4117,7 +4117,7 @@ and run the "authconfig" command.</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002238</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -4236,7 +4236,7 @@ Remove any occurrences of "NOPASSWD" tags in the file.</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002038</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -4353,7 +4353,7 @@ Remove any occurrences of "!authenticate" tags in the file.</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002038</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -4469,7 +4469,7 @@ FAIL_DELAY 4</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -4823,7 +4823,7 @@ The SSH service must be restarted for changes to take effect.</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -4939,7 +4939,7 @@ The SSH service must be restarted for changes to take effect.</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -5328,7 +5328,7 @@ Modify the "/etc/pam_pkcs11/pam_pkcs11.conf" file to use the cackey module if re
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000766</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -5704,7 +5704,7 @@ Use the following command to map an existing user to the "user_u" role:
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002235</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -5829,7 +5829,7 @@ If the file integrity application does not exist, or a "crontab" file does not e
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-001744</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -5961,7 +5961,7 @@ The following example output is generic. It will set cron to run AIDE daily and 
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-001744</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -6446,7 +6446,7 @@ install usb-storage /bin/true</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-001958</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -6574,7 +6574,7 @@ If "autofs" is required for Network File System (NFS), it must be documented wit
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-001958</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -7177,7 +7177,7 @@ UMASK  077</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -7415,7 +7415,7 @@ If the operating system is in non-compliance with the Information Assurance Vuln
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -7540,7 +7540,7 @@ Document all authorized accounts on the system.</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -7871,7 +7871,7 @@ If any files on the system do not have an assigned owner, this is a finding.</AT
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002165</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -7984,7 +7984,7 @@ If any files on the system do not have an assigned group, this is a finding.</AT
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002165</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -8101,7 +8101,7 @@ If any interactive users do not have a home directory assigned, this is a findin
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -8213,7 +8213,7 @@ CREATE_HOME yes</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -8337,7 +8337,7 @@ Note: The example will be for the user smithj, who has a home directory of "/hom
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -8453,7 +8453,7 @@ Note: The example will be for the user "smithj".
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -8569,7 +8569,7 @@ Note: The example will be for the user smithj, who has a home directory of "/hom
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -8690,7 +8690,7 @@ Note: The example will be for the user "smithj", who has a home directory of "/h
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -8808,7 +8808,7 @@ Note: The example will be for the user smithj, who has a home directory of "/hom
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -8932,7 +8932,7 @@ Note: The example will be for the user smithj, who has a home directory of "/hom
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -9052,7 +9052,7 @@ Note: The example will be for the user smithj, who has a home directory of "/hom
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -9170,7 +9170,7 @@ Note: The example will be for the smithj user, who has a home directory of "/hom
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -9298,7 +9298,7 @@ Note: The example will be for the user smithj, who has a home directory of "/hom
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -9416,7 +9416,7 @@ Note: The example will be for the smithj user, who has a home directory of "/hom
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -9529,7 +9529,7 @@ If any local interactive user initialization files have executable search path s
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -27980,7 +27980,7 @@ Add the setting to lock the screensaver lock delay:
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000057</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -28112,7 +28112,7 @@ Add the setting to lock the session idle delay:
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000057</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -28227,7 +28227,7 @@ password    required    pam_pwquality.so retry=3</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000192</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS></COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>

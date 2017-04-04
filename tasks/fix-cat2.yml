@@ -46,6 +46,22 @@
       - patch
       - RHEL-07-010080
 
+- name: "MEDIUM | RHEL-07-010081 | PATCH | The operating system must set the lock delay setting for all connection types."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-010081
+
+- name: "MEDIUM | RHEL-07-010082 | PATCH | The operating system must set the session idle delay setting for all connection types."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-010082
+
 - name: "MEDIUM | RHEL-07-010090 | PATCH | The operating system must have the screen package installed."
   command: "true"
   tags:
@@ -63,6 +79,14 @@
       - RHEL-07-010100
 
 - name: "MEDIUM | RHEL-07-010110 | PATCH | The operating system must initiate a session lock for graphical user interfaces when the screensaver is activated."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-010110
+
+- name: "MEDIUM | RHEL-07-010119 | PATCH | The operating system must initiate a session lock for graphical user interfaces when the screensaver is activated."
   command: "true"
   tags:
       - cat2
@@ -125,6 +149,8 @@
       - medium
       - patch
       - RHEL-07-010180
+
+
 
 - name: "MEDIUM | RHEL-07-010190 | PATCH | When passwords are changed the number of repeating characters of the same character class must not be more than four characters."
   command: "true"
@@ -214,21 +240,256 @@
       - patch
       - RHEL-07-010310
 
-- name: "MEDIUM | RHEL-07-010371 | PATCH | If three unsuccessful logon attempts within 15 minutes occur the associated account must be locked."
+- name: "MEDIUM | RHEL-07-010320 | PATCH | Accounts subject to three unsuccessful login attempts within 15 minutes must be locked for the maximum configurable period."
   command: "true"
   tags:
       - cat2
       - medium
       - patch
-      - RHEL-07-010371
+      - RHEL-07-010320
 
-- name: "MEDIUM | RHEL-07-010372 | PATCH | Accounts subject to three unsuccessful login attempts within 15 minutes must be locked for the maximum configurable period."
+- name: "MEDIUM | RHEL-07-010330 | PATCH | If three unsuccessful logon attempts within 15 minutes occur the associated account must be locked."
   command: "true"
   tags:
       - cat2
       - medium
       - patch
-      - RHEL-07-010372
+      - RHEL-07-010330
+
+- name: "MEDIUM | RHEL-07-010340 | PATCH | Users must provide a password for privilege escalation."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-010340
+
+- name: "MEDIUM | RHEL-07-010350 | PATCH | Users must re-authenticate for privilege escalation."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-010350
+
+- name: "MEDIUM | RHEL-07-010430 | PATCH | The delay between logon prompts following a failed console logon attempt must be at least four seconds."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-010430
+
+- name: "MEDIUM | RHEL-07-010460 | PATCH | The operating system must not allow users to override SSH environment variables."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-010460
+      - ssh
+
+- name: "MEDIUM | RHEL-07-010470 | PATCH | The operating system must not allow a non-certificate trusted host SSH logon to the system."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-010470
+      - ssh
+
+- name: "MEDIUM | RHEL-07-010500 | PATCH | The operating system must uniquely identify and must authenticate organizational users (or processes acting on behalf of organizational users) using multifactor authentication."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-010500
+
+- name: "MEDIUM | RHEL-07-020020 | PATCH | The operating system must prevent non-privileged users from executing privileged functions to include disabling, circumventing, or altering implemented security safeguards/countermeasures."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-020020
+
+- name: "MEDIUM | RHEL-07-020030 | PATCH | A file integrity tool must verify the baseline operating system configuration at least weekly."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-020030
+
+- name: "MEDIUM | RHEL-07-020040 | PATCH | Designated personnel must be notified if baseline configurations are changed in an unauthorized manner."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-020040
+
+- name: "MEDIUM | RHEL-07-020100 | PATCH | USB mass storage must be disabled."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-020100
+
+- name: "MEDIUM | RHEL-07-020110 | PATCH | File system automounter must be disabled unless required."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-020110
+
+- name: "MEDIUM | RHEL-07-020240 | PATCH | The operating system must define default permissions for all authenticated users in such a way that the user can only read and modify their own files."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-020240
+
+- name: "MEDIUM | RHEL-07-020260 | PATCH | Vendor packaged system security patches and updates must be installed and up to date."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-020260
+
+- name: "MEDIUM | RHEL-07-020270 | PATCH | The system must not have unnecessary accounts."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-020270
+
+- name: "MEDIUM | RHEL-07-020320 | PATCH | All files and directories must have a valid owner."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-020320
+
+- name: "MEDIUM | RHEL-07-020330 | PATCH | All files and directories must have a valid group owner."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-020330
+
+- name: "MEDIUM | RHEL-07-020600 | PATCH | All local interactive users must have a home directory assigned in the /etc/passwd file."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-020600
+
+- name: "MEDIUM | RHEL-07-020610 | PATCH | All local interactive user accounts, upon creation, must be assigned a home directory."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-020610
+
+- name: "MEDIUM | RHEL-07-020620 | PATCH | All local interactive user home directories defined in the /etc/passwd file must exist."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-020620
+
+- name: "MEDIUM | RHEL-07-020630 | PATCH | All local interactive user home directories must have mode 0750 or less permissive."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-020630
+
+- name: "MEDIUM | RHEL-07-020640 | PATCH | All local interactive user home directories must be owned by their respective users."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-020660
+
+- name: "MEDIUM | RHEL-07-020650 | PATCH | All local interactive user home directories must be group-owned by the home directory owners primary group."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-020670
+
+- name: "MEDIUM | RHEL-07-020660 | PATCH | All files and directories contained in local interactive user home directories must be owned by the owner of the home directory."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-020680
+
+- name: "MEDIUM | RHEL-07-020670 | PATCH | All files and directories contained in local interactive user home directories must be group-owned by a group of which the home directory owner is a member."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-020670
+
+- name: "MEDIUM | RHEL-07-020680 | PATCH | All files and directories contained in local interactive user home directories must have mode 0750 or less permissive."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-020680
+
+- name: "MEDIUM | RHEL-07-020690 | PATCH | All local initialization files for interactive users must be owned by the home directory user or root."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-020690
+
+- name: "MEDIUM | RHEL-07-020700 | PATCH | Local initialization files for local interactive users must be group-owned by the users primary group or root."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-020700
+
+- name: "MEDIUM | RHEL-07-020710 | PATCH | All local initialization files must have mode 0740 or less permissive."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-020710
+
+- name: "MEDIUM | RHEL-07-020720 | PATCH | All local initialization files must have mode 0740 or less permissive."
+  command: "true"
+  tags:
+      - cat2
+      - medium
+      - patch
+      - RHEL-07-020720
+### END OF LINE - REMOVE ME WHEN DONE REORGANIZING ###
 
 - name: "MEDIUM | RHEL-07-010373 | PATCH | If three unsuccessful root logon attempts within 15 minutes occur the associated account must be locked."
   command: "true"
@@ -237,22 +498,6 @@
       - medium
       - patch
       - RHEL-07-010373
-
-- name: "MEDIUM | RHEL-07-010380 | PATCH | Users must provide a password for privilege escalation."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-010380
-
-- name: "MEDIUM | RHEL-07-010381 | PATCH | Users must re-authenticate for privilege escalation."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-010381
 
 - name: "MEDIUM | RHEL-07-010400 | PATCH | The operating system must prohibit the use of cached nss authenticators after one day."
   command: "true"
@@ -279,215 +524,6 @@
       - RHEL-07-010402
       - ssh
 
-- name: "MEDIUM | RHEL-07-010420 | PATCH | The delay between logon prompts following a failed console logon attempt must be at least four seconds."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-010420
-
-- name: "MEDIUM | RHEL-07-010441 | PATCH | The operating system must not allow users to override SSH environment variables."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-010441
-      - ssh
-
-- name: "MEDIUM | RHEL-07-010442 | PATCH | The operating system must not allow a non-certificate trusted host SSH logon to the system."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-010442
-      - ssh
-
-- name: "MEDIUM | RHEL-07-010500 | PATCH | The operating system must uniquely identify and must authenticate organizational users (or processes acting on behalf of organizational users) using multi-factor authentication."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-010500
-
-- name: "MEDIUM | RHEL-07-020090 | PATCH | The operating system must prevent non-privileged users from executing privileged functions to include disabling, circumventing, or altering implemented security safeguards/countermeasures."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-020090
-
-- name: "MEDIUM | RHEL-07-020130 | PATCH | A file integrity tool must verify the baseline operating system configuration at least weekly."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-020130
-
-- name: "MEDIUM | RHEL-07-020140 | PATCH | Designated personnel must be notified if baseline configurations are changed in an unauthorized manner."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-020140
-
-- name: "MEDIUM | RHEL-07-020160 | PATCH | USB mass storage must be disabled."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-020160
-
-- name: "MEDIUM | RHEL-07-020161 | PATCH | File system automounter must be disabled unless required."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-020161
-
-- name: "MEDIUM | RHEL-07-020230 | PATCH | The operating system must define default permissions for all authenticated users in such a way that the user can only read and modify their own files."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-020230
-
-- name: "MEDIUM | RHEL-07-020250 | PATCH | System security patches and updates must be installed and up to date."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-020250
-
-- name: "MEDIUM | RHEL-07-020290 | PATCH | The system must not have unnecessary accounts."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-020290
-
-- name: "MEDIUM | RHEL-07-020360 | PATCH | All files and directories must have a valid owner."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-020360
-
-- name: "MEDIUM | RHEL-07-020370 | PATCH | All files and directories must have a valid group owner."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-020370
-
-- name: "MEDIUM | RHEL-07-020620 | PATCH | All local interactive users must have a home directory assigned in the /etc/passwd file."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-020620
-
-- name: "MEDIUM | RHEL-07-020630 | PATCH | All local interactive user accounts, upon creation, must be assigned a home directory."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-020630
-
-- name: "MEDIUM | RHEL-07-020640 | PATCH | All local interactive user home directories defined in the /etc/passwd file must exist."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-020640
-
-- name: "MEDIUM | RHEL-07-020650 | PATCH | All local interactive user home directories must have mode 0750 or less permissive."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-020650
-
-- name: "MEDIUM | RHEL-07-020660 | PATCH | All local interactive user home directories must be owned by their respective users."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-020660
-
-- name: "MEDIUM | RHEL-07-020670 | PATCH | All local interactive user home directories must be group-owned by the home directory owners primary group."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-020670
-
-- name: "MEDIUM | RHEL-07-020680 | PATCH | All files and directories contained in local interactive user home directories must be owned by the owner of the home directory."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-020680
-
-- name: "MEDIUM | RHEL-07-020690 | PATCH | All files and directories contained in local interactive user home directories must be group-owned by a group of which the home directory owner is a member."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-020690
-
-- name: "MEDIUM | RHEL-07-020700 | PATCH | All files and directories contained in local interactive user home directories must have mode 0750 or less permissive."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-020700
-
-- name: "MEDIUM | RHEL-07-020840 | PATCH | All local initialization files for interactive users must be owned by the home directory user or root."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-020840
-
-- name: "MEDIUM | RHEL-07-020850 | PATCH | Local initialization files for local interactive users must be group-owned by the users primary group or root."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-020850
-
-- name: "MEDIUM | RHEL-07-020860 | PATCH | All local initialization files must have mode 0740 or less permissive."
-  command: "true"
-  tags:
-      - cat2
-      - medium
-      - patch
-      - RHEL-07-020860
 
 - name: "MEDIUM | RHEL-07-020870 | PATCH | All local interactive user initialization files executable search paths must contain only absolute paths."
   command: "true"
@@ -1210,10 +1246,11 @@
       - RHEL-07-040110
 
 - name: "MEDIUM | RHEL-07-040160 | PATCH | All network connections associated with a communication session must be terminated at the end of the session or after 10 minutes of inactivity from the user at a command prompt, except to fulfill documented and validated mission requirements."
-  lineinfile:
-      dest: /etc/profile
-      regexp: ^#?TMOUT
-      line: TMOUT=600
+  blockinfile:
+    path: /etc/network/interfaces/01-banner-message
+    block: |
+     [org/gnome/login-screen]
+     banner-message-enable=true
   tags:
       - cat2
       - medium
@@ -1260,7 +1297,7 @@
       regexp: ^#?ClientAliveInterval
       line: ClientAliveInterval 600
       validate: sshd -t -f %s
-  notify: restart ssh
+  notify: restart sshdd
   tags:
       - cat2
       - medium
@@ -1274,7 +1311,7 @@
       regexp: ^#?ClientAliveCountMax
       line: ClientAliveCountMax 0
       validate: sshd -t -f %s
-  notify: restart ssh
+  notify: restart sshd
   tags:
       - cat2
       - medium
@@ -1386,7 +1423,7 @@
       line: PermitRootLogin no
       insertafter: '(?i)^#?authentication'
       validate: sshd -t -f %s
-  notify: restart ssh
+  notify: restart sshd
   tags:
       - cat2
       - medium
@@ -1400,7 +1437,7 @@
       regexp: ^#?IgnoreRhosts
       line: IgnoreRhosts yes
       validate: sshd -t -f %s
-  notify: restart ssh
+  notify: restart sshd
   tags:
       - cat2
       - medium
@@ -1414,7 +1451,7 @@
       regexp: ^#?IgnoreUserKnownHosts
       line: IgnoreUserKnownHosts yes
       validate: sshd -t -f %s
-  notify: restart ssh
+  notify: restart sshd
   tags:
       - cat2
       - medium
@@ -1428,7 +1465,7 @@
       regexp: ^#?RhostsRSAAuthentication
       line: RhostsRSAAuthentication yes
       validate: sshd -t -f %s
-  notify: restart ssh
+  notify: restart sshd
   tags:
       - cat2
       - medium
@@ -1578,7 +1615,7 @@
       regexp: (?i)^#?MACs
       line: MACs hmac-sha2-256,hmac-sha2-512
       validate: sshd -t -f %s
-  notify: restart ssh
+  notify: restart sshd
   tags:
       - cat2
       - medium
@@ -1617,7 +1654,7 @@
       regexp: (?i)^#?gssapiauthentication
       line: GSSAPIAuthentication no
       validate: sshd -t -f %s
-  notify: restart ssh
+  notify: restart sshd
   tags:
       - cat2
       - medium
@@ -1631,7 +1668,7 @@
       regexp: (?i)^#?kerberosauthentication
       line: KerberosAuthentication no
       validate: sshd -t -f %s
-  notify: restart ssh
+  notify: restart sshd
   tags:
       - cat2
       - medium
@@ -1645,7 +1682,7 @@
       regexp: (?i)^#?strictmodes
       line: StrictModes yes
       validate: sshd -t -f %s
-  notify: restart ssh
+  notify: restart sshd
   tags:
       - cat2
       - medium
@@ -1659,7 +1696,7 @@
       regexp: (?i)^#?useprivilegeseparation
       line: UsePrivilegeSeparation yes
       validate: sshd -t -f %s
-  notify: restart ssh
+  notify: restart sshd
   tags:
       - cat2
       - medium
@@ -1673,7 +1710,7 @@
       regexp: (?i)^#?compression
       line: Compression no
       validate: sshd -t -f %s
-  notify: restart ssh
+  notify: restart sshd
   tags:
       - cat2
       - medium

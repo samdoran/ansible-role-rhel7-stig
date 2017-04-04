@@ -58,7 +58,12 @@
       - gui
 
 - name: "HIGH | RHEL-07-010450 | PATCH | The operating system must not allow an unrestricted logon to the system."
-  command: "true"
+  lineinfile:
+      dest: /etc/gdm/custom.conf
+      regexp: (?i)timedloginenable
+      line: TimedLoginEnable=false
+      insertafter: '\[daemon\]'
+  when: rhel7stig_gui
   tags:
       - cat1
       - high
@@ -249,6 +254,7 @@
   yum:
       name: "{{ rhel7stig_av_package.package }}"
       state: present
+  when: rhel7stig_antivirus_required
   tags:
       - cat1
       - high
@@ -262,6 +268,7 @@
       state: started
       enabled: yes
   ignore_errors: yes
+  when: rhel7stig_antivirus_required
   tags:
       - cat1
       - high
@@ -325,7 +332,7 @@
       regexp: (?i)^#?x11forwarding
       line: X11Forwarding yes
       validate: sshd -t -f %s
-  notify: restart ssh
+  notify: restart sshd
   tags:
       - cat1
       - high
