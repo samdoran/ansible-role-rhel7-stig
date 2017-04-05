@@ -1,4 +1,4 @@
-- name: restart ssh
+- name: restart sshd
   service:
     name: sshd
     state: restarted
@@ -16,3 +16,8 @@
 
 - name: make grub2 config
   command: grub2-mkconfig --output=/etc/grub2.cfg
+
+- name: restart ntpd
+  service:
+      name: ntpd
+      state: restarted

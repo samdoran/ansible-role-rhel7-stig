@@ -1,0 +1,7 @@
+- name: "LOW | RHEL-07-##### | AUDIT | Description."
+  command: "true"
+  tags:
+      - cat3
+      - low
+      - audit
+      - RHEL-07-#####

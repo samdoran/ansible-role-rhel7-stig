@@ -1,1 +1,3 @@
 *.pyc
+ansible.cfg
+hosts
