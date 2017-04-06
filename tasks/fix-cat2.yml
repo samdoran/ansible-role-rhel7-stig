@@ -63,7 +63,9 @@
       - RHEL-07-010082
 
 - name: "MEDIUM | RHEL-07-010090 | PATCH | The operating system must have the screen package installed."
-  command: "true"
+  yum:
+      name: screen
+      state: latest
   tags:
       - cat2
       - medium
@@ -194,7 +196,10 @@
       - RHEL-07-010200
 
 - name: "MEDIUM | RHEL-07-010210 | PATCH | The shadow file must be configured to store only encrypted representations of passwords."
-  command: "true"
+  lineinfile:
+      dest: /etc/login.defs
+      regexp: ^#?ENCRYPT_METHOD
+      line: ENCRYPT_METHOD SHA512
   tags:
       - cat2
       - medium
@@ -202,7 +207,10 @@
       - RHEL-07-010210
 
 - name: "MEDIUM | RHEL-07-010220 | PATCH | User and group account administration utilities must be configured to store only encrypted representations of passwords."
-  command: "true"
+  lineinfile:
+      dest: /etc/libuser.conf
+      regexp: ^#?crypt_style
+      line: crypt_style = sha512
   tags:
       - cat2
       - medium
@@ -210,7 +218,10 @@
       - RHEL-07-010220
 
 - name: "MEDIUM | RHEL-07-010230 | PATCH | Passwords for new users must be restricted to a 24 hours/1 day minimum lifetime."
-  command: "true"
+  lineinfile:
+      dest: /etc/login.defs
+      regexp: ^#?PASS_MIN_DAYS
+      line: PASS_MIN_DAYS 1
   tags:
       - cat2
       - medium
@@ -226,7 +237,10 @@
       - RHEL-07-010240
 
 - name: "MEDIUM | RHEL-07-010250 | PATCH | Passwords for new users must be restricted to a 60-day maximum lifetime."
-  command: "true"
+  lineinfile:
+      dest: /etc/login.defs
+      regexp: ^#?PASS_MAX_DAYS
+      line: PASS_MAX_DAYS 60
   tags:
       - cat2
       - medium
@@ -250,7 +264,10 @@
       - RHEL-07-010270
 
 - name: "MEDIUM | RHEL-07-010280 | PATCH | Passwords must be a minimum of 15 characters in length."
-  command: "true"
+  lineinfile:
+      dest: /etc/security/pwquality.conf
+      regexp: '^#?minlen = 15'
+      line: minlen = 15
   tags:
       - cat2
       - medium
@@ -258,7 +275,10 @@
       - RHEL-07-010280
 
 - name: "MEDIUM | RHEL-07-010310 | PATCH | The operating system must disable account identifiers (individuals, groups, roles, and devices) if the password expires."
-  command: "true"
+  lineinfile:
+      dest: /etc/default/useradd
+      regexp: ^#?INACTIVE=
+      line: INACTIVE=0
   tags:
       - cat2
       - medium
