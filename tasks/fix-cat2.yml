@@ -16,11 +16,11 @@
 
 - name: "MEDIUM | RHEL-07-010050 | PATCH | The operating system must display the Standard Mandatory DoD Notice and Consent Banner before granting local or remote access to the system via a command line user logon."
   copy:
-        src: "rhel_07_010050_issue_text"
-        dest: /etc/issue
-        owner: root
-        group: root
-        mode: 644
+      src: "rhel_07_010050_issue_text"
+      dest: /etc/issue
+      owner: root
+      group: root
+      mode: 644
   tags:
       - cat2
       - medium
@@ -30,10 +30,10 @@
 
 - name: "MEDIUM | RHEL-07-010050 | PATCH | The operating system must display the Standard Mandatory DoD Notice and Consent Banner before granting local or remote access to the system via a command line user logon."
   lineinfile:
-        dest: /etc/ssh/sshd_config
-        regexp: '^#?Banner'
-        line: Banner /etc/issue
-        validate: sshd -tf %s
+      dest: /etc/ssh/sshd_config
+      regexp: '^#?Banner'
+      line: Banner /etc/issue
+      validate: sshd -tf %s
   notify: restart sshd
   tags:
       - cat2
