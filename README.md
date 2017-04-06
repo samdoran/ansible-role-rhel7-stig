@@ -1,6 +1,5 @@
 RHEL 7 DISA STIG
 ================
-
 **This role is still under active development.**
 
 
