@@ -86,16 +86,22 @@
       - patch
       - RHEL-07-010110
 
-- name: "MEDIUM | RHEL-07-010119 | PATCH | The operating system must initiate a session lock for graphical user interfaces when the screensaver is activated."
-  command: "true"
+- name: "MEDIUM | RHEL-07-010119 | PATCH | When passwords are changed or new passwords are established, pwquality must be used"
+  lineinfile:
+      dest: /etc/pam.d/passwd
+      regexp: '^#?password required pam_pwquality.so retry'
+      line: password required pam_pwquality.so retry=3
   tags:
       - cat2
       - medium
       - patch
-      - RHEL-07-010110
+      - RHEL-07-010119
 
 - name: "MEDIUM | RHEL-07-010120 | PATCH | When passwords are changed or new passwords are established, the new password must contain at least one upper-case character."
-  command: "true"
+  lineinfile:
+      dest: /etc/security/pwquality.conf
+      regexp: '(?i)^#?ucredit ='
+      line: ucredit = -1
   tags:
       - cat2
       - medium
@@ -103,7 +109,10 @@
       - RHEL-07-010120
 
 - name: "MEDIUM | RHEL-07-010130 | PATCH | When passwords are changed or new passwords are established, the new password must contain at least one lower-case character."
-  command: "true"
+  lineinfile:
+      dest: /etc/security/pwquality.conf
+      regexp: '(?i)^#?lcredit ='
+      line: lcredit = -1
   tags:
       - cat2
       - medium
@@ -111,7 +120,10 @@
       - RHEL-07-010130
 
 - name: "MEDIUM | RHEL-07-010140 | PATCH | When passwords are changed or new passwords are assigned, the new password must contain at least one numeric character."
-  command: "true"
+  lineinfile:
+      dest: /etc/security/pwquality.conf
+      regexp: '(?i)^#?dcredit ='
+      line: dcredit = -1
   tags:
       - cat2
       - medium
@@ -119,7 +131,10 @@
       - RHEL-07-010140
 
 - name: "MEDIUM | RHEL-07-010150 | PATCH | When passwords are changed or new passwords are assigned, the new password must contain at least one special character."
-  command: "true"
+  lineinfile:
+      dest: /etc/security/pwquality.conf
+      regexp: '(?i)^#?ocredit ='
+      line: ocredit = -1
   tags:
       - cat2
       - medium
@@ -127,7 +142,10 @@
       - RHEL-07-010150
 
 - name: "MEDIUM | RHEL-07-010160 | PATCH | When passwords are changed a minimum of eight of the total number of characters must be changed."
-  command: "true"
+  lineinfile:
+      dest: /etc/security/pwquality.conf
+      regexp: '(?i)^#?difok ='
+      line: difok = 8
   tags:
       - cat2
       - medium
@@ -135,7 +153,10 @@
       - RHEL-07-010160
 
 - name: "MEDIUM | RHEL-07-010170 | PATCH | When passwords are changed a minimum of four character classes must be changed."
-  command: "true"
+  lineinfile:
+      dest: /etc/security/pwquality.conf
+      regexp: '(?i)^#?minclass ='
+      line: minclass = 4
   tags:
       - cat2
       - medium
@@ -143,17 +164,21 @@
       - RHEL-07-010170
 
 - name: "MEDIUM | RHEL-07-010180 | PATCH | When passwords are changed the number of repeating consecutive characters must not be more than four characters."
-  command: "true"
+  lineinfile:
+      dest: /etc/security/pwquality.conf
+      regexp: '(?i)^#?maxrepeat ='
+      line: maxrepeat = 2
   tags:
       - cat2
       - medium
       - patch
       - RHEL-07-010180
 
-
-
 - name: "MEDIUM | RHEL-07-010190 | PATCH | When passwords are changed the number of repeating characters of the same character class must not be more than four characters."
-  command: "true"
+  lineinfile:
+      dest: /etc/security/pwquality.conf
+      regexp: '(?i)^#?maxclassrepeat ='
+      line: maxclassrepeat = 4
   tags:
       - cat2
       - medium
@@ -1196,7 +1221,7 @@
 - name: "MEDIUM | RHEL-07-040160 | PATCH | All network connections associated with a communication session must be terminated at the  the session or after 10 minutes of inactivity from the user at a command prompt, except to fulfill documented and validated mission requirements."
   lineinfile:
       dest: /etc/profile
-      regexp: ^#?TMOUT=600
+      regexp: ^#?TMOUT=
       line: TMOUT=600
   tags:
       - cat2
