@@ -92,3 +92,30 @@
       - audit
       - RHEL-07-041010
       - always
+
+- name: "MEDIUM | RHEL-07-010030 | AUDIT | The operating system must display the Standard Mandatory DoD Notice and Consent Banner before granting local or remote access to the system via a graphical user logon. "
+  shell: 'test -d /etc/dconf/db/local.d; if [ $? == 0 ]; then grep -s -i banner-message-enable /etc/dconf/db/local.d/* | grep -i false; fi'
+  register: rhel_07_010030_audit
+  failed_when: no
+  changed_when: no
+  ignore_errors: yes
+  tags:
+     - cat2
+     - medium
+     - audit
+     - RHEL-07-010030
+     - gui
+     - always
+
+- name: "MEDIUM | RHEL-07-010040 | AUDIT | The operating system must display the approved Standard Mandatory DoD Notice and Consent Banner before granting local or remote access to the system via a graphical user logon. "
+  shell: 'test -d /etc/dconf/db/local.d; if [ $? == 0 ]; then grep -s -i banner-message-text/etc/dconf/db/local.d/*; fi'
+  register: rhel_07_010040_audit
+  failed_when: no
+  changed_when: no
+  ignore_errors: yes
+  tags:
+     - cat2
+     - medium
+     - audit
+     - RHEL-07-010040
+     - gui
