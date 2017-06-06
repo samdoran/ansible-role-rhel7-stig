@@ -9,7 +9,7 @@
       - RHEL-07-010010
 
 - name: "HIGH | RHEL-07-010020 | PATCH | The cryptographic hash of system files and commands must match vendor values."
-  shell: yum reinstall -y $(rpm -qf {{ item.split(' ')[-1] }})
+  shell: yum reinstall -y $(rpm -qf {{ item.split( ' ' )[-1] }})
   with_items: "{{ rhel_07_010020_audit.stdout_lines }}"
   when: rhel_07_010020_audit.stdout_lines | length > 0
   tags:
@@ -90,7 +90,7 @@
       regexp: (?i)permitemptypassword
       line: PermitEmptyPasswords no
       validate: sshd -t -f %s
-  notify: restart ssh
+  notify: restart sshd
   tags:
       - cat1
       - high
@@ -361,7 +361,7 @@
       regexp: (?i)^#?protocol
       line: Protocol 2
       validate: sshd -t -f %s
-  notify: restart ssh
+  notify: restart sshd
   tags:
       - cat1
       - high
