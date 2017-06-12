@@ -90,7 +90,7 @@
       regexp: (?i)permitemptypassword
       line: PermitEmptyPasswords no
       validate: sshd -t -f %s
-  notify: restart ssh
+  notify: restart sshd
   tags:
       - cat1
       - high
@@ -361,7 +361,7 @@
       regexp: (?i)^#?protocol
       line: Protocol 2
       validate: sshd -t -f %s
-  notify: restart ssh
+  notify: restart sshd
   tags:
       - cat1
       - high
