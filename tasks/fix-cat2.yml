@@ -1334,7 +1334,7 @@
       regexp: ^#?ClientAliveInterval
       line: ClientAliveInterval 600
       validate: sshd -t -f %s
-  notify: restart sshdd
+  notify: restart sshd
   tags:
       - cat2
       - medium
